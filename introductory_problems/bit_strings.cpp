@@ -14,10 +14,14 @@ const ll md = 1000000007;
 int main(int argc, char const *argv[]){ 
     long long int n, result;
     cin >> n;  
-    result = pow(2, n);
-    if(result > md){
-        result = result % md;
+    result = 2;
+
+    while(n-1){
+        result = (result * 2) % md;
+        n--;
     }
+    
+    
     cout << result;
     return 0;
 }
