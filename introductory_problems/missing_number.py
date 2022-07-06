@@ -1,14 +1,30 @@
+"""
+from re import X
 
-'''
-N = int(input())
-lista_num = map(int, input().split())
-falta = N
-for teste, num in enumerate(sorted(lista_num)):
-    if (teste + 1) != num:
-        falta = teste + 1
-        break
-print(falta)
-'''
-md = 1000000007
 
-print(2 ** 447 % md)
+a = 842572599 
+b = 577431753
+x = 2
+y = 1
+
+while(a > 0 and b > 0):
+    print(a, b) 
+    a -= x
+    b -= y 
+    aux = x 
+    x = y 
+    y = aux
+
+print(a, b)
+"""
+
+a = 842572599 // 2
+a1 = 421286299
+b = 577431753 - a1
+b1 = 156145454 // 2
+b2 = 78072727 * 2
+b3 = 156145454 + 156145454
+a2 = 78072727 + 1
+
+print()
+
